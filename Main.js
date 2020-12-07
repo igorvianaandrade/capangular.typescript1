@@ -1,0 +1,14 @@
+"use strict";
+exports.__esModule = true;
+var Matematica_1 = require("./Matematica");
+var num;
+var numeros;
+numeros.num1 = 1;
+numeros.num2 = 2;
+num = new Matematica_1.Matematica().soma(numeros);
+console.log(num);
+var numeros;
+numeros.num1 = 1;
+numeros.num2 = 2;
+num = new Matematica_1.Matematica().subtrair(numeros);
+console.log(num);

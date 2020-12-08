@@ -1,4 +1,4 @@
-export class EnderecoClass{
+export class EnderecoClass implements Endereco{
 
     private endereco: Endereco; 
 
@@ -29,9 +29,11 @@ export class EnderecoClass{
 }
 
 export interface Endereco{
-    rua:string;
-    cep:string;
-    estado:string;
-    cidade:string;    
+    rua?:string;
+    cep?:string;
+    estado?:string;
+    cidade?:string;    
 
+    setEndereco(endereco: Endereco): void;
+    toString():string;
 }

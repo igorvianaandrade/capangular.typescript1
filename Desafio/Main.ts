@@ -17,13 +17,17 @@ prod.valor = 500
 
 var classeProduto = new ProdutoClass();*/
 
+var endereco1 = new EnderecoClass();
+
 var end:Endereco;
 end.rua = 'rua das amendoeiras';
 end.cidade = 'salvador';
 end.estado = 'ba';
 end.cep = '40.420.750';
-var classeEndereco = new EnderecoClass();
 
+endereco1.setEndereco(end)
+
+/*
 var formaPagamento:FormaPagamento;
 var forma = new FormaPagamentoClass();
 

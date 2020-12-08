@@ -1,13 +1,13 @@
 "use strict";
 exports.__esModule = true;
-exports.FornecedorClass = void 0;
-var FornecedorClass = /** @class */ (function () {
-    function FornecedorClass(nome, cnpj) {
+exports.Fornecedor = void 0;
+var Fornecedor = /** @class */ (function () {
+    function Fornecedor(nome, cnpj) {
         this.nome = "";
         this.cnpj = "";
         this.nome = nome;
         this.cnpj = cnpj;
     }
-    return FornecedorClass;
+    return Fornecedor;
 }());
-exports.FornecedorClass = FornecedorClass;
+exports.Fornecedor = Fornecedor;

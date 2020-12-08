@@ -1,4 +1,4 @@
-export class CategoriaClass{
+export class Categoria{
 
     private descricao: string = "";    
 
@@ -7,6 +7,6 @@ export class CategoriaClass{
     }    
 }
 
-export interface Categoria{
+export interface ICategoria{
     descricao:string;    
 }

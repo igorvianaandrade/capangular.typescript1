@@ -1,11 +1,11 @@
 "use strict";
 exports.__esModule = true;
-exports.CategoriaClass = void 0;
-var CategoriaClass = /** @class */ (function () {
-    function CategoriaClass(descricao) {
+exports.Categoria = void 0;
+var Categoria = /** @class */ (function () {
+    function Categoria(descricao) {
         this.descricao = "";
         this.descricao = descricao;
     }
-    return CategoriaClass;
+    return Categoria;
 }());
-exports.CategoriaClass = CategoriaClass;
+exports.Categoria = Categoria;

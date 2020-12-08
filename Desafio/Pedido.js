@@ -1,14 +1,14 @@
 "use strict";
 exports.__esModule = true;
-exports.PedidoClass = void 0;
-var PedidoClass = /** @class */ (function () {
-    function PedidoClass(codigo, valor, data) {
+exports.Pedido = void 0;
+var Pedido = /** @class */ (function () {
+    function Pedido(codigo, valor, data) {
         this.aliquota = 0.8;
         this.codigo = codigo;
         this.valor = valor;
         this.data = data;
     }
-    PedidoClass.prototype.valorTotal = function (frete) {
+    Pedido.prototype.valorTotal = function (frete) {
         var resultado = 0;
         resultado = this.valor * this.aliquota;
         if (frete) {
@@ -16,6 +16,6 @@ var PedidoClass = /** @class */ (function () {
         }
         return resultado;
     };
-    return PedidoClass;
+    return Pedido;
 }());
-exports.PedidoClass = PedidoClass;
+exports.Pedido = Pedido;

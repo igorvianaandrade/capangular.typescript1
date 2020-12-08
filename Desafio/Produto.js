@@ -1,15 +1,16 @@
 "use strict";
 exports.__esModule = true;
-exports.ProdutoClass = void 0;
-var ProdutoClass = /** @class */ (function () {
-    function ProdutoClass() {
+exports.Produto = void 0;
+var Produto = /** @class */ (function () {
+    function Produto() {
+        this.produto = {};
     }
-    ProdutoClass.prototype.setProduto = function (produto) {
+    Produto.prototype.setProduto = function (produto) {
         this.produto.codigo = produto.codigo;
         this.produto.descricao = produto.descricao;
         this.produto.valor = produto.valor;
         this.produto.qtdeEstoque = produto.qtdeEstoque;
     };
-    return ProdutoClass;
+    return Produto;
 }());
-exports.ProdutoClass = ProdutoClass;
+exports.Produto = Produto;

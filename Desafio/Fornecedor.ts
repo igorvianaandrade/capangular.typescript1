@@ -1,4 +1,4 @@
-export class FornecedorClass{
+export class Fornecedor{
 
     private nome: string = "";
     private cnpj: string = "";    
@@ -9,7 +9,7 @@ export class FornecedorClass{
     }    
 }
 
-export interface Fornecedor{
+export interface IFornecedor{
     nome:string;
     cnpj:string;
 }

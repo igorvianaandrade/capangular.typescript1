@@ -1,10 +1,10 @@
-export class ProdutoClass{
+export class Produto{
 
-    private produto: Produto; 
+    private produto: IProduto = {}; 
 
     constructor(){}
 
-    setProduto(produto: Produto): void{
+    setProduto(produto: IProduto): void{
         this.produto.codigo = produto.codigo;
         this.produto.descricao = produto.descricao;
         this.produto.valor = produto.valor;
@@ -13,9 +13,9 @@ export class ProdutoClass{
 
 }
 
-export interface Produto{
-    codigo: number;
-    descricao: string;
-    valor: number;
-    qtdeEstoque: number;    
+export interface IProduto{
+    codigo?: number;
+    descricao?: string;
+    valor?: number;
+    qtdeEstoque?: number;    
 }

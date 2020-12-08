@@ -1,13 +1,13 @@
 "use strict";
 exports.__esModule = true;
-exports.ClienteClass = void 0;
-var ClienteClass = /** @class */ (function () {
-    function ClienteClass(nome, cpf) {
+exports.Cliente = void 0;
+var Cliente = /** @class */ (function () {
+    function Cliente(nome, cpf) {
         this.nome = "";
         this.cpf = "";
         this.nome = nome;
         this.cpf = cpf;
     }
-    return ClienteClass;
+    return Cliente;
 }());
-exports.ClienteClass = ClienteClass;
+exports.Cliente = Cliente;

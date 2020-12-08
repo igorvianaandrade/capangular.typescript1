@@ -1,13 +1,13 @@
-import { Categoria, CategoriaClass } from './Categoria';
-import { Cliente, ClienteClass } from './Cliente';
-import { Desconto, DescontoClass } from './Desconto';
-import { Endereco, EnderecoClass } from './Endereco';
-import { FormaPagamento, FormaPagamentoClass } from './FormaPagamento';
-import { Fornecedor, FornecedorClass } from './Fornecedor';
-import { Pedido, PedidoClass } from './Pedido';
-import { Produto, ProdutoClass } from './Produto';
+import { ICategoria, Categoria } from './Categoria';
+import { ICliente, Cliente } from './Cliente';
+import { IDesconto, Desconto } from './Desconto';
+import { IEndereco, Endereco } from './Endereco';
+import { IFormaPagamento, FormaPagamento } from './FormaPagamento';
+import { IFornecedor, Fornecedor } from './Fornecedor';
+import { IPedido, Pedido } from './Pedido';
+import { IProduto, Produto } from './Produto';
 
-var cliente = new ClienteClass("Dan", "123.456.789-78");
+var cliente = new Cliente("Dan", "123.456.789-78");
 
 /*var prod:Produto;
 prod.codigo = 1;
@@ -17,7 +17,7 @@ prod.valor = 500
 
 var classeProduto = new ProdutoClass();*/
 
-var endereco1 = new EnderecoClass();
+var endereco1 = new Endereco();
 
 var end: Endereco = {rua: 'rua das amendoeiras', cidade:'salvador', estado:'ba', cep:'40.420.750'};
 

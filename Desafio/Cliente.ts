@@ -1,4 +1,4 @@
-export class ClienteClass{
+export class Cliente{
 
     private nome: string = "";
     private cpf: string = "";
@@ -9,7 +9,7 @@ export class ClienteClass{
     }    
 }
 
-export interface Cliente{
+export interface ICliente{
     nome:string;
     cpf:string;
 }

@@ -1,8 +1,13 @@
-export class EnderecoClass{
+export class Endereco{
 
-    private endereco: Endereco = {}; 
+    private endereco: IEndereco = {}; 
 
-    constructor(){}
+    constructor(endereco: Endereco){
+        this.endereco.rua = endereco.rua;
+        this.endereco.cep = endereco.cep;
+        this.endereco.estado = endereco.estado;
+        this.endereco.cidade = endereco.cidade;
+    }
 
     setEndereco(endereco: Endereco): void{
         this.endereco.rua = endereco.rua;
@@ -20,7 +25,7 @@ export class EnderecoClass{
 
 }
 
-export interface Endereco{
+export interface IEndereco{
     rua?:string;
     cep?:string;
     estado?:string;

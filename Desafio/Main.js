@@ -2,7 +2,7 @@
 exports.__esModule = true;
 var Cliente_1 = require("./Cliente");
 var Endereco_1 = require("./Endereco");
-var cliente = new Cliente_1.ClienteClass("Dan", "123.456.789-78");
+var cliente = new Cliente_1.Cliente("Dan", "123.456.789-78");
 /*var prod:Produto;
 prod.codigo = 1;
 prod.descricao = "TV";
@@ -10,7 +10,7 @@ prod.qtdeEstoque = 5;
 prod.valor = 500
 
 var classeProduto = new ProdutoClass();*/
-var endereco1 = new Endereco_1.EnderecoClass();
+var endereco1 = new Endereco_1.Endereco();
 var end = { rua: 'rua das amendoeiras', cidade: 'salvador', estado: 'ba', cep: '40.420.750' };
 endereco1.setEndereco(end);
 /*

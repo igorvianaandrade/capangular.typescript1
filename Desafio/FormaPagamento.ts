@@ -1,6 +1,6 @@
-export class FormaPagamentoClass{
+export class FormaPagamento{
 
-    private formaPagamento: FormaPagamento; 
+    private formaPagamento: IFormaPagamento; 
 
     constructor(){}
 
@@ -22,6 +22,6 @@ export class FormaPagamentoClass{
     }
 }
 
-export interface FormaPagamento{
+export interface IFormaPagamento{
     pagamento: string;
 }

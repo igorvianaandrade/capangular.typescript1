@@ -1,4 +1,4 @@
-export class DescontoClass{
+export class Desconto{
 
     private descricao: string = "";
     private valor: number;    
@@ -9,7 +9,7 @@ export class DescontoClass{
     }    
 }
 
-export interface Desconto{
+export interface IDesconto{
     descricao: string;
     valor: number;
 }

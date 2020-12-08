@@ -1,6 +1,6 @@
 import { Endereco } from "./Endereco";
 
-export class PedidoClass{
+export class Pedido{
 
     private codigo: number;
     private endereco: Endereco;
@@ -28,7 +28,7 @@ export class PedidoClass{
     }
 }
 
-export interface Pedido{
+export interface IPedido{
     codigo: number;
 
     valorTotal(frete: boolean):number;

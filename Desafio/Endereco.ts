@@ -11,13 +11,13 @@ export class EnderecoClass{
         this.endereco.cidade = endereco.cidade;
     }
 
-    getRua():string{}
+    /*getRua():string{};
 
-    getCep():string{}
+    getCep():string{};
 
-    getEstado():string{}
+    getEstado():string{};
 
-    getCidade():string{}
+    getCidade():string{};*/
         
     toString():string{
         return `Rua ${this.endereco.rua} \n ` +

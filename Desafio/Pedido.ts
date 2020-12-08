@@ -42,5 +42,7 @@ export interface IPedido{
     frete: boolean;
     valor: number;  
     aliquota: number;
-    data: Date;
+    data: string;
+    produto: Produto;
+    cliente: Cliente;
 }

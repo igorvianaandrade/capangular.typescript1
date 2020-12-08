@@ -11,11 +11,7 @@ prod.valor = 500
 
 var classeProduto = new ProdutoClass();*/
 var endereco1 = new Endereco_1.EnderecoClass();
-var end;
-end.rua = 'rua das amendoeiras';
-end.cidade = 'salvador';
-end.estado = 'ba';
-end.cep = '40.420.750';
+var end = { rua: 'rua das amendoeiras', cidade: 'salvador', estado: 'ba', cep: '40.420.750' };
 endereco1.setEndereco(end);
 /*
 var formaPagamento:FormaPagamento;

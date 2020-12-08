@@ -19,13 +19,9 @@ var classeProduto = new ProdutoClass();*/
 
 var endereco1 = new EnderecoClass();
 
-var end:Endereco;
-end.rua = 'rua das amendoeiras';
-end.cidade = 'salvador';
-end.estado = 'ba';
-end.cep = '40.420.750';
+var end: Endereco = {rua: 'rua das amendoeiras', cidade:'salvador', estado:'ba', cep:'40.420.750'};
 
-endereco1.setEndereco(end)
+endereco1.setEndereco(end);
 
 /*
 var formaPagamento:FormaPagamento;

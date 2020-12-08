@@ -3,6 +3,7 @@ exports.__esModule = true;
 exports.EnderecoClass = void 0;
 var EnderecoClass = /** @class */ (function () {
     function EnderecoClass() {
+        this.endereco = {};
     }
     EnderecoClass.prototype.setEndereco = function (endereco) {
         this.endereco.rua = endereco.rua;
@@ -10,13 +11,6 @@ var EnderecoClass = /** @class */ (function () {
         this.endereco.estado = endereco.estado;
         this.endereco.cidade = endereco.cidade;
     };
-    /*getRua():string{};
-
-    getCep():string{};
-
-    getEstado():string{};
-
-    getCidade():string{};*/
     EnderecoClass.prototype.toString = function () {
         return "Rua " + this.endereco.rua + " \n " +
             ("Cep: " + this.endereco.cep + " \n ") +

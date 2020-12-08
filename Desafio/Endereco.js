@@ -2,13 +2,10 @@
 exports.__esModule = true;
 exports.Endereco = void 0;
 var Endereco = /** @class */ (function () {
-    function Endereco(endereco) {
+    function Endereco() {
         this.endereco = {};
-        this.endereco.rua = endereco.rua;
-        this.endereco.cep = endereco.cep;
-        this.endereco.estado = endereco.estado;
-        this.endereco.cidade = endereco.cidade;
     }
+    ;
     Endereco.prototype.setEndereco = function (endereco) {
         this.endereco.rua = endereco.rua;
         this.endereco.cep = endereco.cep;

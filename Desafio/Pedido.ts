@@ -9,10 +9,11 @@ export class Pedido{
     private aliquota: number = 0.8;
     private data: Date;
 
-    constructor(codigo: number, valor: number, data: Date){
+    constructor(codigo: number, valor: number, data: Date, endereco:Endereco){
         this.codigo = codigo;
         this.valor = valor;
         this.data = data;
+        this.endereco = endereco;
     }
 
     valorTotal(frete: boolean):number{
@@ -29,7 +30,5 @@ export class Pedido{
 }
 
 export interface IPedido{
-    codigo: number;
-
-    valorTotal(frete: boolean):number;
+    codigo: number;    
 }

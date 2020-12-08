@@ -2,14 +2,9 @@ export class Endereco{
 
     private endereco: IEndereco = {}; 
 
-    constructor(endereco: Endereco){
-        this.endereco.rua = endereco.rua;
-        this.endereco.cep = endereco.cep;
-        this.endereco.estado = endereco.estado;
-        this.endereco.cidade = endereco.cidade;
-    }
+    constructor(){};
 
-    setEndereco(endereco: Endereco): void{
+    setEndereco(endereco: IEndereco): void{
         this.endereco.rua = endereco.rua;
         this.endereco.cep = endereco.cep;
         this.endereco.estado = endereco.estado;

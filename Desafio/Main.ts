@@ -7,28 +7,15 @@ import { IFornecedor, Fornecedor } from './Fornecedor';
 import { IPedido, Pedido } from './Pedido';
 import { IProduto, Produto } from './Produto';
 
-var cliente = new Cliente("Dan", "123.456.789-78");
+var cliente1 = new Cliente("Dan", "123.456.789-78");
 
-/*var prod:Produto;
-prod.codigo = 1;
-prod.descricao = "TV";
-prod.qtdeEstoque = 5;
-prod.valor = 500
-
-var classeProduto = new ProdutoClass();*/
+var produto1 = new Produto();
+var prod: IProduto = {codigo: 1, descricao: 'TV', valor: 100, qtdeEstoque:10};
+produto1.setProduto(prod);
 
 var endereco1 = new Endereco();
-
-var end: Endereco = {rua: 'rua das amendoeiras', cidade:'salvador', estado:'ba', cep:'40.420.750'};
-
+var end: IEndereco = {rua: 'rua das amendoeiras', cidade:'salvador', estado:'ba', cep:'40.420.750'};
 endereco1.setEndereco(end);
 
-/*
-var formaPagamento:FormaPagamento;
-var forma = new FormaPagamentoClass();
 
-forma.pagarPorBoletoPorPadrao();
 
-/*console.log(forma.pagarPorBoletoPorPadrao());
-console.log(forma.pagarPorCartaoCredito());
-console.log(forma.pagarPorCartaoDebito());*/

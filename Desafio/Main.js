@@ -2,6 +2,7 @@
 exports.__esModule = true;
 var Cliente_1 = require("./Cliente");
 var Endereco_1 = require("./Endereco");
+var Pedido_1 = require("./Pedido");
 var Produto_1 = require("./Produto");
 var cliente1 = new Cliente_1.Cliente("Dan", "123.456.789-78");
 var produto1 = new Produto_1.Produto();
@@ -10,3 +11,5 @@ produto1.setProduto(prod);
 var endereco1 = new Endereco_1.Endereco();
 var end = { rua: 'rua das amendoeiras', cidade: 'salvador', estado: 'ba', cep: '40.420.750' };
 endereco1.setEndereco(end);
+var pedido1 = new Pedido_1.Pedido(1, endereco1, true, 100, '2018-07-07', produto1);
+console.log("Valor total do Pedido: " + pedido1.valorTotal().toString());

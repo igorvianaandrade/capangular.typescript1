@@ -6,11 +6,13 @@ export class PedidoClass{
     private endereco: Endereco;
     private frete: boolean;
     private valor: number;  
-    private aliquota:number = 0.8;
+    private aliquota: number = 0.8;
+    private data: Date;
 
-    constructor(codigo: number, valor: number){
+    constructor(codigo: number, valor: number, data: Date){
         this.codigo = codigo;
         this.valor = valor;
+        this.data = data;
     }
 
     valorTotal(frete: boolean):number{

@@ -7,21 +7,28 @@ import { Fornecedor, FornecedorClass } from './Fornecedor';
 import { Pedido, PedidoClass } from './Pedido';
 import { Produto, ProdutoClass } from './Produto';
 
-/*var end:Endereco;
+var cliente = new ClienteClass("Dan", "123.456.789-78");
 
-end.rua = 'rua';
-end.cidade = 'cidade';
-end.estado = 'estado';
-end.cep = 'cep';
+var prod:Produto;
+prod.codigo = 1;
+prod.descricao = "TV";
+prod.qtdeEstoque = 5;
+prod.valor = 500
 
-var classeEndereco = new EnderecoClass();*/
+var classeProduto = new ProdutoClass();
 
-/*import { FormaPagamento } from './FormaPagamento';
+var end:Endereco;
+end.rua = 'rua das amendoeiras';
+end.cidade = 'salvador';
+end.estado = 'ba';
+end.cep = '40.420.750';
+var classeEndereco = new EnderecoClass();
 
-var forma = new FormaPagamento();
+var formaPagamento:FormaPagamento;
+var forma = new FormaPagamentoClass();
 
 forma.pagarPorBoletoPorPadrao();
 
-console.log(forma.pagarPorBoletoPorPadrao());
+/*console.log(forma.pagarPorBoletoPorPadrao());
 console.log(forma.pagarPorCartaoCredito());
 console.log(forma.pagarPorCartaoDebito());*/

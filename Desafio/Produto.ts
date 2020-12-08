@@ -1,16 +1,15 @@
 export class ProdutoClass{
 
-    private codigo: number;
-    private descricao: string = "";
-    private valor: number;
-    private qtdeEstoque: number;
+    private produto: Produto; 
 
-    constructor(codigo: number, descricao: string, valor: number, qtdeEstoque: number){
-        this.codigo = codigo;
-        this.descricao = descricao;
-        this.valor = valor;
-        this.qtdeEstoque = qtdeEstoque;
-    }    
+    constructor(){}
+
+    setProduto(produto: Produto): void{
+        this.produto.codigo = produto.codigo;
+        this.produto.descricao = produto.descricao;
+        this.produto.valor = produto.valor;
+        this.produto.qtdeEstoque = produto.qtdeEstoque;
+    }   
 
 }
 
@@ -18,7 +17,5 @@ export interface Produto{
     codigo: number;
     descricao: string;
     valor: number;
-    qtdeEstoque: number;
-
-    //calcularEstoque():number;
+    qtdeEstoque: number;    
 }

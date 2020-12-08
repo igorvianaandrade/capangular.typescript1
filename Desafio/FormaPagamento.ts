@@ -1,29 +1,27 @@
 export class FormaPagamentoClass{
 
-    private pagamento: string = "";
+    private formaPagamento: FormaPagamento; 
 
-    constructor(){
-        this.pagamento = "boleto";
-    }
+    constructor(){}
 
     public pagarPorBoletoPorPadrao():string {
-        this.pagamento = "boleto";
+        this.formaPagamento.pagamento = "boleto";
 
         return `Pagamento via ${this.pagamento} ...`;
     }
 
     public pagarPorCartaoCredito():string{
-        this.pagamento = "cartão de crédito";
+        this.formaPagamento.pagamento = "cartão de crédito";
 
         return `Pagamento via ${this.pagamento} ...`;
     }
 
     public pagarPorCartaoDebito():string{
-        this.pagamento = "cartão de débito";
+        this.formaPagamento.pagamento = "cartão de débito";
         return `Pagamento via ${this.pagamento} ...`;
     }
 }
 
 export interface FormaPagamento{
-        
+    pagamento: string;
 }

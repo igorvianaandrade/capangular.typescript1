@@ -6,7 +6,8 @@ export class Cliente{
     constructor(nome: string, cpf: string){        
         this.nome = nome;
         this.cpf = cpf;
-    }    
+    }   
+    
 }
 
 export interface ICliente{

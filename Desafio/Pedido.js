@@ -2,7 +2,7 @@
 exports.__esModule = true;
 exports.Pedido = void 0;
 var Pedido = /** @class */ (function () {
-    function Pedido(codigo, endereco, frete, valor, data, produto) {
+    function Pedido(codigo, endereco, frete, valor, data, produto, cliente) {
         this.aliquota = 0.8;
         this.codigo = codigo;
         this.valor = valor;
@@ -10,6 +10,7 @@ var Pedido = /** @class */ (function () {
         this.endereco = endereco;
         this.frete = frete;
         this.produto = produto;
+        this.cliente = cliente;
     }
     Pedido.prototype.valorTotal = function () {
         var resultado = 0;

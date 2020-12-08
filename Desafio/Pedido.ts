@@ -1,3 +1,4 @@
+import { Cliente } from "./Cliente";
 import { Endereco } from "./Endereco";
 import { Produto } from "./Produto";
 
@@ -10,14 +11,16 @@ export class Pedido{
     private aliquota: number = 0.8;
     private data: string;
     private produto: Produto;
+    private cliente:Cliente;
 
-    constructor(codigo: number, endereco:Endereco, frete:boolean, valor: number, data: string, produto: Produto){
+    constructor(codigo: number, endereco:Endereco, frete:boolean, valor: number, data: string, produto: Produto, cliente: Cliente){
         this.codigo = codigo;
         this.valor = valor;
         this.data = data;
         this.endereco = endereco;
         this.frete = frete;
         this.produto = produto;
+        this.cliente = cliente;
     }
 
     valorTotal():number{

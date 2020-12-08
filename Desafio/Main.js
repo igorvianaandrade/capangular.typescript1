@@ -11,5 +11,5 @@ produto1.setProduto(prod);
 var endereco1 = new Endereco_1.Endereco();
 var end = { rua: 'rua das amendoeiras', cidade: 'salvador', estado: 'ba', cep: '40.420.750' };
 endereco1.setEndereco(end);
-var pedido1 = new Pedido_1.Pedido(1, endereco1, true, 100, '2018-07-07', produto1);
+var pedido1 = new Pedido_1.Pedido(1, endereco1, true, 100, '2018-07-07', produto1, cliente1);
 console.log("Valor total do Pedido: " + pedido1.valorTotal().toString());

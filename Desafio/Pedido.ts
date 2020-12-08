@@ -11,7 +11,8 @@ export class Pedido{
     private aliquota: number = 0.8;
     private data: string;
     private produto: Produto;
-    private cliente:Cliente;
+    private cliente: Cliente;
+    private valorFretePercent: number = 0.15;
 
     constructor(codigo: number, endereco:Endereco, frete:boolean, valor: number, data: string, produto: Produto, cliente: Cliente){
         this.codigo = codigo;
@@ -25,12 +26,16 @@ export class Pedido{
 
     valorTotal():number{
         let resultado: number = 0;        
+        let taxaImposto: number = 0;        
+        let valorFrete: number = 0;
 
-        resultado = this.valor * this.aliquota;
+        taxaImposto = this.valor * this.aliquota;
+        resultado = resultado + taxaImposto;
 
         if (this.frete) {
-            resultado = resultado * 0.15;
-        }         
+           valorFrete = resultado * this.valorFretePercent;
+           resultado = resultado + valorFrete;
+        }
 
         return resultado;
     }

@@ -1,4 +1,4 @@
-export class FormaPagamento{
+export class FormaPagamentoClass{
 
     private pagamento: string = "";
 
@@ -22,4 +22,8 @@ export class FormaPagamento{
         this.pagamento = "cartão de débito";
         return `Pagamento via ${this.pagamento} ...`;
     }
+}
+
+export interface FormaPagamento{
+        
 }

@@ -1,23 +1,23 @@
 "use strict";
 exports.__esModule = true;
-exports.FormaPagamento = void 0;
-var FormaPagamento = /** @class */ (function () {
-    function FormaPagamento() {
+exports.FormaPagamentoClass = void 0;
+var FormaPagamentoClass = /** @class */ (function () {
+    function FormaPagamentoClass() {
         this.pagamento = "";
         this.pagamento = "boleto";
     }
-    FormaPagamento.prototype.pagarPorBoletoPorPadrao = function () {
+    FormaPagamentoClass.prototype.pagarPorBoletoPorPadrao = function () {
         this.pagamento = "boleto";
         return "Pagamento via " + this.pagamento + " ...";
     };
-    FormaPagamento.prototype.pagarPorCartaoCredito = function () {
+    FormaPagamentoClass.prototype.pagarPorCartaoCredito = function () {
         this.pagamento = "cartão de crédito";
         return "Pagamento via " + this.pagamento + " ...";
     };
-    FormaPagamento.prototype.pagarPorCartaoDebito = function () {
+    FormaPagamentoClass.prototype.pagarPorCartaoDebito = function () {
         this.pagamento = "cartão de débito";
         return "Pagamento via " + this.pagamento + " ...";
     };
-    return FormaPagamento;
+    return FormaPagamentoClass;
 }());
-exports.FormaPagamento = FormaPagamento;
+exports.FormaPagamentoClass = FormaPagamentoClass;

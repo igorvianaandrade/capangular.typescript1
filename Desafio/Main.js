@@ -3,14 +3,14 @@ exports.__esModule = true;
 var Cliente_1 = require("./Cliente");
 var Endereco_1 = require("./Endereco");
 var FormaPagamento_1 = require("./FormaPagamento");
-var Produto_1 = require("./Produto");
 var cliente = new Cliente_1.ClienteClass("Dan", "123.456.789-78");
-var prod;
+/*var prod:Produto;
 prod.codigo = 1;
 prod.descricao = "TV";
 prod.qtdeEstoque = 5;
-prod.valor = 500;
-var classeProduto = new Produto_1.ProdutoClass();
+prod.valor = 500
+
+var classeProduto = new ProdutoClass();*/
 var end;
 end.rua = 'rua das amendoeiras';
 end.cidade = 'salvador';

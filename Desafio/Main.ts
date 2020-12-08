@@ -9,13 +9,13 @@ import { Produto, ProdutoClass } from './Produto';
 
 var cliente = new ClienteClass("Dan", "123.456.789-78");
 
-var prod:Produto;
+/*var prod:Produto;
 prod.codigo = 1;
 prod.descricao = "TV";
 prod.qtdeEstoque = 5;
 prod.valor = 500
 
-var classeProduto = new ProdutoClass();
+var classeProduto = new ProdutoClass();*/
 
 var end:Endereco;
 end.rua = 'rua das amendoeiras';
